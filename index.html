@@ -1,252 +1,260 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Pereira — Data Analytics</title>
+  <meta name="description" content="Portfólio de Data Analytics de Leonardo Pereira — dashboards, machine learning, SQL e visualização de dados." />
 
-    <title>Leonardo Pereira | Data & Analytics</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
-    <meta name="description"
-        content="Portfólio profissional de Leonardo Pereira - Data Analytics, Business Intelligence, Python, CRM e Inteligência Artificial.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
-
 <body>
 
-    <nav>
-        <div class="logo">LP</div>
+  <!-- Scroll progress -->
+  <div id="progress-bar" aria-hidden="true"></div>
 
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#jornada">Jornada</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#dashboards">Dashboards</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">LP</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#habilidades">Skills</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- HERO -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#sobre"       onclick="closeMobile()">Sobre</a>
+    <a href="#projetos"    onclick="closeMobile()">Projetos</a>
+    <a href="#habilidades" onclick="closeMobile()">Skills</a>
+    <a href="#contato"     onclick="closeMobile()">Contato</a>
+  </div>
 
-    <section class="hero">
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="hero-tag">Data Analytics Portfolio</div>
+    <h1>Leonardo<br><em>Pereira</em></h1>
+    <p class="hero-desc">
+      Analista de dados com foco em transformar dados complexos em insights estratégicos.
+      Especializado em visualização, modelagem e storytelling com dados.
+    </p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="#projetos">Ver projetos</a>
+      <a class="btn-outline" href="#contato">Entrar em contato</a>
+    </div>
+  </div>
 
-        <div class="hero-content">
-
-            <span class="hero-label">
-                DATA & ANALYTICS SPECIALIST
-            </span>
-
-            <h1>
-                Leonardo Pereira
-            </h1>
-
-            <p class="hero-description">
-
-                Transformando dados em decisões estratégicas através de
-                Analytics, CRM e Inteligência Artificial.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projetos" class="btn-primary">
-                    Ver Projetos
-                </a>
-
-                <a href="#" class="btn-secondary">
-                    LinkedIn
-                </a>
-
-            </div>
-
-            <div class="hero-tags">
-
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Power BI</span>
-                <span>CRM</span>
-                <span>AI</span>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="assets/profile.jpeg" alt="Leonardo Pereira">
-
-        </div>
-
-    </section>
-
-    <!-- SOBRE -->
-
-    <section id="sobre">
-
-        <h2>Sobre</h2>
-
-        <p>
-            Profissional de Data & Analytics com experiência em CRM, Marketing,
-            Comercial e Inteligência de Mercado.
+  <!-- ── SOBRE ── -->
+  <section id="sobre">
+    <div class="section-label reveal">Sobre mim</div>
+    <div class="section-title reveal reveal-delay-1">Quem sou</div>
+    <div class="about-grid">
+      <div class="reveal reveal-delay-2">
+        <p class="about-text">
+          Profissional de dados apaixonado por resolver problemas reais com análise rigorosa.
+          Tenho experiência em explorar grandes volumes de dados, construir dashboards executivos
+          e desenvolver modelos preditivos que apoiam decisões estratégicas.<br><br>
+          Acredito que bons dados, bem apresentados, têm o poder de transformar organizações.
         </p>
-
-        <p>
-            Atuo transformando dados complexos em insights acionáveis,
-            apoiando decisões estratégicas e geração de valor para o negócio.
-        </p>
-
-    </section>
-
-    <!-- JORNADA -->
-
-    <section id="jornada">
-
-        <h2>Minha Jornada</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                Zona Leste de São Paulo
-            </div>
-
-            <div class="timeline-item">
-                Primeiro emprego aos 12 anos
-            </div>
-
-            <div class="timeline-item">
-                Metalúrgico na Lorenzetti
-            </div>
-
-            <div class="timeline-item">
-                USP
-            </div>
-
-            <div class="timeline-item">
-                Marketing & CRM
-            </div>
-
-            <div class="timeline-item">
-                Data & Analytics
-            </div>
-
-            <div class="timeline-item">
-                MBA Data Science
-            </div>
-
-            <div class="timeline-item">
-                Próximo Passo: Liderança Estratégica
-            </div>
-
+      </div>
+      <div class="about-stats reveal reveal-delay-3">
+        <div class="stat-item">
+          <div class="stat-num">+5</div>
+          <div class="stat-label">Projetos concluídos</div>
         </div>
-
-    </section>
-
-    <!-- PROJETOS -->
-
-    <section id="projetos">
-
-        <h2>Projetos</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>CRM Audience Builder</h3>
-                <p>Em construção.</p>
-            </div>
-
-            <div class="card">
-                <h3>Prompt Injection Scanner</h3>
-                <p>Em construção.</p>
-            </div>
-
-            <div class="card">
-                <h3>Inteligência de Mercado</h3>
-                <p>Em construção.</p>
-            </div>
-
-            <div class="card">
-                <h3>MBA - Trissomia 21 Analytics</h3>
-                <p>Em construção.</p>
-            </div>
-
+        <div class="stat-item">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Anos de experiência</div>
         </div>
-
-    </section>
-
-    <!-- DASHBOARDS -->
-
-    <section id="dashboards">
-
-        <h2>Dashboards</h2>
-
-        <div class="cards">
-
-            <!-- Power BI 1 -->
-
-            <!-- Power BI 2 -->
-
-            <!-- Power BI 3 -->
-
+        <div class="stat-item">
+          <div class="stat-num">SQL · Python · BI</div>
+          <div class="stat-label">Principais ferramentas</div>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- ── PROJETOS ── -->
+  <section id="projetos">
+    <div class="section-label reveal">Portfólio</div>
+    <div class="section-title reveal reveal-delay-1">Projetos</div>
 
-    <!-- SKILLS -->
+    <div class="filter-bar reveal reveal-delay-2">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bi">BI & Dashboard</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="python">Python & EDA</button>
+      <button class="filter-btn" data-filter="engenharia">Engenharia</button>
+    </div>
 
-    <section>
+    <div class="projects-grid" id="projects-grid">
 
-        <h2>Skills</h2>
-
-        <div class="badges">
-
-            <span>Python</span>
-            <span>SQL</span>
-            <span>Power BI</span>
-            <span>Salesforce</span>
-            <span>Pandas</span>
-            <span>Flask</span>
-            <span>Machine Learning</span>
-            <span>Git</span>
-
+      <div class="project-card" data-category="bi">
+        <div class="project-tag">Dashboard · BI</div>
+        <div class="project-title">Análise de Vendas — Varejo Nacional</div>
+        <p class="project-desc">Dashboard executivo com KPIs de vendas, análise regional e projeções mensais. Reduziu tempo de reporting em 60%.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Power BI</span>
+          <span class="tool-badge">SQL</span>
+          <span class="tool-badge">Excel</span>
         </div>
-
-    </section>
-
-    <!-- CONTATO -->
-
-    <section id="contato">
-
-        <h2>Contato</h2>
-
-        <p>
-            Vamos conversar sobre dados, analytics e negócios.
-        </p>
-
-        <div class="contact-links">
-
-            <a href="#">LinkedIn</a>
-
-            <a href="#">GitHub</a>
-
-            <a href="#">Email</a>
-
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/leonardopereira/projeto-vendas" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="project-link" href="#" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Demo
+          </a>
         </div>
+      </div>
 
-    </section>
+      <div class="project-card" data-category="ml">
+        <div class="project-tag">Machine Learning</div>
+        <div class="project-title">Modelo de Churn — Telecomunicações</div>
+        <p class="project-desc">Predição de cancelamento de clientes com 87% de acurácia. Identificação de perfis de risco para ações preventivas.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge">Scikit-learn</span>
+          <span class="tool-badge">Pandas</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/leonardopereira/churn-model" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
 
-    <footer>
+      <div class="project-card" data-category="python">
+        <div class="project-tag">EDA · Python</div>
+        <div class="project-title">Análise Exploratória — E-commerce</div>
+        <p class="project-desc">Mapeamento completo do funil de conversão com segmentação de clientes via clustering (K-Means).</p>
+        <div class="project-tools">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge">Matplotlib</span>
+          <span class="tool-badge">Seaborn</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/leonardopereira/ecommerce-eda" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="project-link" href="#" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Tableau Public
+          </a>
+        </div>
+      </div>
 
-        © 2026 Leonardo Pereira
+      <div class="project-card" data-category="engenharia">
+        <div class="project-tag">ETL · Engenharia</div>
+        <div class="project-title">Pipeline de Dados — Financeiro</div>
+        <p class="project-desc">Automação de coleta, tratamento e carga de dados financeiros com atualização diária e alertas de anomalia.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge">Airflow</span>
+          <span class="tool-badge">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/leonardopereira/pipeline-financeiro" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
 
-    </footer>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <!-- ── HABILIDADES ── -->
+  <section id="habilidades">
+    <div class="section-label reveal">Competências</div>
+    <div class="section-title reveal reveal-delay-1">Habilidades</div>
+    <div class="skills-grid">
 
+      <div class="skill-group reveal reveal-delay-1">
+        <h3>Linguagens</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-item"><span>SQL</span><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+          <div class="skill-item"><span>R</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-2">
+        <h3>Visualização</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>Power BI</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-item"><span>Tableau</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          <div class="skill-item"><span>Looker</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-3">
+        <h3>Outros</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span>Excel / Sheets</span><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+          <div class="skill-item"><span>Git</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+          <div class="skill-item"><span>Cloud (GCP/AWS)</span><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTATO ── -->
+  <section id="contato">
+    <div class="section-label reveal">Contato</div>
+    <div class="section-title reveal reveal-delay-1">Vamos conversar</div>
+    <div class="contact-row">
+      <p class="contact-text reveal reveal-delay-2">
+        Aberto a oportunidades, projetos freelance e colaborações.
+        Se quiser discutir dados, análises ou novas ideias, entre em contato.
+      </p>
+      <div class="contact-links reveal reveal-delay-3">
+        <a class="contact-link" href="https://linkedin.com/in/leonardopereira" target="_blank">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/leonardopereira
+        </a>
+        <a class="contact-link" href="https://github.com/leonardopereira" target="_blank">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github.com/leonardopereira
+        </a>
+        <a class="contact-link" href="mailto:leonardo@email.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          leonardo@email.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Leonardo Pereira · Data Analytics</footer>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/filter.js"></script>
 </body>
-
 </html>
