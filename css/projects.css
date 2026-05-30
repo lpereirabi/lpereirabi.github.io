@@ -38,16 +38,29 @@
 
 /* ── Card ── */
 .project-card {
-  padding: 1.75rem;
-  background: var(--color-navy);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  transition: background var(--transition-fast), opacity var(--transition-normal), transform var(--transition-normal);
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 24px;
+
+    padding: 32px;
+
+    transition: .4s ease;
 }
+
+
 .project-card:hover {
-  background: var(--color-navy2);
+
+    transform: translateY(-10px);
+
+    border-color: var(--accent);
+
+    box-shadow: 0 20px 40px rgba(0,212,198,.15);
 }
+
+
 .project-card.hidden {
   opacity: 0;
   transform: scale(0.97);
@@ -117,3 +130,6 @@
 .project-link:hover {
   color: var(--color-gold2);
 }
+
+
+

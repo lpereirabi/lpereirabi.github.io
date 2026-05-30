@@ -1,32 +1,29 @@
 :root {
-  /* ── Naledi-inspired palette ── */
-  --color-bg:       #F5F0E8;   /* creme quente — fundo principal */
-  --color-bg2:      #EDE7D9;   /* creme mais escuro — superfícies */
-  --color-bg3:      #E4DDD0;   /* hover / cards ativos */
- 
-  --color-green:    #2D4A3E;   /* verde escuro — cor primária */
-  --color-green2:   #3D6355;   /* verde médio — hover */
-  --color-green3:   #4F7A68;   /* verde suave — accents */
- 
-  --color-terracota: #A0522D;  /* terracota — detalhe quente */
-  --color-sand:      #C4A882;  /* areia — borders e muted */
- 
-  --color-text:     #1C1C1A;   /* quase preto — texto principal */
-  --color-muted:    #6B6860;   /* cinza quente — texto secundário */
-  --color-border:   rgba(100, 85, 60, 0.18);
- 
-  /* ── Typography ── */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-sans:    'DM Sans', sans-serif;
- 
-  /* ── Layout ── */
-  --section-padding-x: 2.5rem;
-  --section-padding-y: 4rem;
-  --section-max-width: 900px;
- 
-  /* ── Transitions ── */
-  --transition-fast:   0.2s ease;
-  --transition-normal: 0.35s ease;
-  --transition-slow:   0.6s ease;
+
+  /* COLORS */
+
+  --bg-primary: #0B0F14;
+  --bg-secondary: #121821;
+  --bg-card: #171F2B;
+
+  --accent: #00D4C6;
+  --accent-hover: #00B8AC;
+
+  --text-primary: #F5F7FA;
+  --text-secondary: #AAB3C5;
+
+  --border-color: #253041;
+
+  /* TYPOGRAPHY */
+
+  --font-heading: "DM Serif Display", serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* SPACING */
+
+  --section-spacing: 140px;
+
+  /* TRANSITIONS */
+
+  --transition: all .3s ease;
 }
- 

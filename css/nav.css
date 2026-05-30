@@ -87,3 +87,30 @@ nav.scrolled { padding: 0.85rem 2.5rem; }
 }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu a:hover { color: var(--color-green); }
+
+
+
+#navbar {
+
+    position: fixed;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    backdrop-filter: blur(20px);
+
+    background: rgba(18,24,33,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 50px;
+
+    z-index: 1000;
+}
