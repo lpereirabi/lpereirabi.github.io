@@ -3,16 +3,24 @@
   margin: 0;
   padding: 0;
 }
- 
-html { scroll-behavior: smooth; }
-ul   { list-style: none; }
-a    { text-decoration: none; }
- 
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   font-family: inherit;
   cursor: pointer;
 }
- 
+
 svg {
   display: block;
   stroke-linecap: round;

@@ -1,0 +1,119 @@
+/* ── Filter bar ── */
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 1.5rem;
+}
+
+.filter-btn {
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  border: 0.5px solid var(--color-border);
+  background: transparent;
+  color: var(--color-muted);
+  transition: all var(--transition-fast);
+}
+.filter-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+.filter-btn.active {
+  background: var(--color-gold);
+  color: var(--color-navy);
+  border-color: var(--color-gold);
+  font-weight: 500;
+}
+
+/* ── Grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--color-border);
+}
+
+/* ── Card ── */
+.project-card {
+  padding: 1.75rem;
+  background: var(--color-navy);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: background var(--transition-fast), opacity var(--transition-normal), transform var(--transition-normal);
+}
+.project-card:hover {
+  background: var(--color-navy2);
+}
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.97);
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.project-title {
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.project-desc {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  flex: 1;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+.tool-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.55rem;
+  border: 0.5px solid var(--color-border);
+  border-radius: 2px;
+  color: rgba(245, 243, 238, 0.45);
+  letter-spacing: 0.04em;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+.project-link {
+  font-size: 0.73rem;
+  color: var(--color-gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color var(--transition-fast);
+}
+.project-link svg {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+.project-link:hover {
+  color: var(--color-gold2);
+}

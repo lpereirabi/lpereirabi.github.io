@@ -1,25 +1,32 @@
 :root {
-  /* Colors */
-  --color-navy:   #0D1B2A;
-  --color-navy2:  #1A2E42;
-  --color-navy3:  #243B55;
-  --color-gold:   #C9A84C;
-  --color-gold2:  #E8C97A;
-  --color-light:  #F5F3EE;
-  --color-muted:  #8A8F96;
-  --color-border: rgba(201, 168, 76, 0.2);
-
-  /* Typography */
-  --font-display: 'DM Serif Display', serif;
+  /* ── Naledi-inspired palette ── */
+  --color-bg:       #F5F0E8;   /* creme quente — fundo principal */
+  --color-bg2:      #EDE7D9;   /* creme mais escuro — superfícies */
+  --color-bg3:      #E4DDD0;   /* hover / cards ativos */
+ 
+  --color-green:    #2D4A3E;   /* verde escuro — cor primária */
+  --color-green2:   #3D6355;   /* verde médio — hover */
+  --color-green3:   #4F7A68;   /* verde suave — accents */
+ 
+  --color-terracota: #A0522D;  /* terracota — detalhe quente */
+  --color-sand:      #C4A882;  /* areia — borders e muted */
+ 
+  --color-text:     #1C1C1A;   /* quase preto — texto principal */
+  --color-muted:    #6B6860;   /* cinza quente — texto secundário */
+  --color-border:   rgba(100, 85, 60, 0.18);
+ 
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', serif;
   --font-sans:    'DM Sans', sans-serif;
-
-  /* Spacing */
+ 
+  /* ── Layout ── */
   --section-padding-x: 2.5rem;
   --section-padding-y: 4rem;
   --section-max-width: 900px;
-
-  /* Transitions */
+ 
+  /* ── Transitions ── */
   --transition-fast:   0.2s ease;
   --transition-normal: 0.35s ease;
   --transition-slow:   0.6s ease;
 }
+ 
