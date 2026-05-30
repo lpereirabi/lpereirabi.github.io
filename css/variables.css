@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --color-navy:   #0D1B2A;
+  --color-navy2:  #1A2E42;
+  --color-navy3:  #243B55;
+  --color-gold:   #C9A84C;
+  --color-gold2:  #E8C97A;
+  --color-light:  #F5F3EE;
+  --color-muted:  #8A8F96;
+  --color-border: rgba(201, 168, 76, 0.2);
+
+  /* Typography */
+  --font-display: 'DM Serif Display', serif;
+  --font-sans:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-padding-x: 2.5rem;
+  --section-padding-y: 4rem;
+  --section-max-width: 900px;
+
+  /* Transitions */
+  --transition-fast:   0.2s ease;
+  --transition-normal: 0.35s ease;
+  --transition-slow:   0.6s ease;
+}
