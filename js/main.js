@@ -1,1 +1,20 @@
 console.log("Portfolio Leonardo Pereira carregado.");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+        }
+
+    });
+
+});
+
+document.querySelectorAll("section").forEach(section => {
+
+    observer.observe(section);
+
+});

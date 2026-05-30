@@ -23,23 +23,25 @@ nav{
 
     position:fixed;
 
-    width:100%;
+    top:20px;
 
-    top:0;
+    left:50%;
 
-    padding:20px 8%;
+    transform:translateX(-50%);
 
-    display:flex;
+    width:90%;
 
-    justify-content:space-between;
+    max-width:1200px;
 
-    align-items:center;
+    border-radius:20px;
 
-    background:rgba(11,17,32,.9);
+    padding:20px 30px;
 
-    backdrop-filter:blur(10px);
+    background:rgba(17,24,39,.7);
 
-    z-index:1000;
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
 }
 
 nav ul{
@@ -60,7 +62,18 @@ nav a{
 
 section{
 
-    padding:120px 8%;
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+}
+
+section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
 }
 
 .hero{
@@ -74,6 +87,8 @@ section{
     align-items:center;
 
     gap:60px;
+
+    position:relative;
 }
 
 .hero-tag{
@@ -87,9 +102,15 @@ section{
 
 .hero h1{
 
-    font-size:5rem;
+    font-size:clamp(4rem,8vw,7rem);
 
-    line-height:1;
+    line-height:.95;
+
+    font-weight:700;
+
+    letter-spacing:-3px;
+
+    margin-bottom:20px;
 }
 
 .hero p{
@@ -99,6 +120,49 @@ section{
     color:#94A3B8;
 
     font-size:1.2rem;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#14B8A6;
+
+    opacity:.08;
+
+    filter:blur(120px);
+
+    right:-100px;
+
+    top:0;
+
+    z-index:-1;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:24px;
+
+    border:1px solid #1E293B;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.4);
+
+    transition:.4s;
+}
+
+.hero-image img:hover{
+
+    transform:translateY(-10px);
 }
 
 .skills-inline{
@@ -172,11 +236,21 @@ h2{
 
     background:#111827;
 
-    padding:30px;
-
-    border-radius:16px;
-
     border:1px solid #1E293B;
+
+    transition:.4s;
+
+    cursor:pointer;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#14B8A6;
+
+    box-shadow:
+        0 20px 40px rgba(20,184,166,.15);
 }
 
 .timeline{
@@ -227,4 +301,25 @@ footer{
     text-align:center;
 
     padding:40px;
+}
+
+
+@media(max-width:900px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+    }
+
+    nav ul{
+
+        display:none;
+    }
 }
